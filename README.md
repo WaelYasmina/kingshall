@@ -1,4 +1,4 @@
-# kingshall
+# The king's hall
 
 "Create An Immersive Experience With Three.js And GSAP" YouTube tutorial project files https://youtu.be/U-ZiSLwicK8
 
