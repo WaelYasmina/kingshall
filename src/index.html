@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The King's Hall</title>
+    <style>
+        body {
+            margin: 0
+        }
+
+        .progress-bar-container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #progress-bar {
+            width: 30%;
+            margin-top: 0.5%;
+            height: 2%;
+        }
+        
+        /* For Firefox */
+        progress::-moz-progress-bar {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b78628+0,fcc201+100 */
+            background: #b78628; /* Old browsers */
+            background: -moz-linear-gradient(left,  #b78628 0%, #fcc201 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #b78628 0%,#fcc201 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #b78628 0%,#fcc201 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b78628', endColorstr='#fcc201',GradientType=1 ); /* IE6-9 */
+            border-radius: 10px;
+        }
+  
+        /* For Chrome or Safari */
+        progress::-webkit-progress-value {
+           /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b78628+0,fcc201+100 */
+            background: #b78628; /* Old browsers */
+            background: -moz-linear-gradient(left,  #b78628 0%, #fcc201 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #b78628 0%,#fcc201 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #b78628 0%,#fcc201 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b78628', endColorstr='#fcc201',GradientType=1 ); /* IE6-9 */
+            border-radius: 10px;
+        }
+
+        progress::-webkit-progress-bar {
+            border-radius: 10px;
+}
+  
+        /* For IE10 */
+        progress {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b78628+0,fcc201+100 */
+            background: #b78628; /* Old browsers */
+            background: -moz-linear-gradient(left,  #b78628 0%, #fcc201 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  #b78628 0%,#fcc201 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  #b78628 0%,#fcc201 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b78628', endColorstr='#fcc201',GradientType=1 ); /* IE6-9 */
+            border-radius: 10px;
+        }
+
+        label {
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar-container">
+        <label for="progress-bar">Loading...</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+    <script src="./js/scripts.js" type="module"></script>
+</body>
+</html>

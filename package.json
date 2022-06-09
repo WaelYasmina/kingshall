@@ -1,0 +1,23 @@
+{
+  "name": "kingshall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "three": "^0.139.0"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.4.0",
+    "parcel-reporter-static-files-copy": "^1.3.4"
+  },
+  "staticFiles": {
+    "staticOutPath": "assets"
+  }
+}
